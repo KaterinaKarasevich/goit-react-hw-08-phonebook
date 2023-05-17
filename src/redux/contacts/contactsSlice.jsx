@@ -1,4 +1,4 @@
-import { getContactsAPI, addContactsAPI, deleteContactAPI } from "./operations";
+import { getContactsAPI, addContactsAPI, deleteContactAPI } from 'redux/contacts/operations';
 
 
 const { createSlice} = require("@reduxjs/toolkit");

@@ -1,8 +1,8 @@
 
 import { useDispatch, useSelector } from "react-redux";
 
-import { deleteContactAPI } from "store/operations";
-import { getContacts, getFilter } from "store/selectors";
+import { deleteContactAPI } from 'redux/contacts/operations';
+import { getContacts, getFilter } from 'redux/contacts/selectors';
 
 import { ContactItems, ContactItem, ContactButton } from "./ContactList.styled"
 
