@@ -1,7 +1,7 @@
+import { createSlice } from '@reduxjs/toolkit';
 import { getContactsAPI, addContactsAPI, deleteContactAPI } from 'redux/contacts/operations';
 
 
-const { createSlice} = require("@reduxjs/toolkit");
 
 const handlePending = state => {
     state.isLoading = true;
@@ -33,7 +33,7 @@ const contactsSlice = createSlice({
 
       .addCase(addContactsAPI.pending, handlePending)
       .addCase(addContactsAPI.fulfilled, (state, action) => {
-        // state.contacts = [...state.contacts, action.payload]   
+         
         state.contacts.push(action.payload);
         state.isLoading = false;
       })

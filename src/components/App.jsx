@@ -1,9 +1,6 @@
 
 import { lazy} from "react";
-
-
 import {Layout} from "components/Layout/Layout";
-import { Route, Routes } from "react-router-dom";
 
 import { useDispatch, useSelector } from "react-redux";
 import { selectIsRefreshing } from "redux/auth/selectorsAuth";
@@ -12,6 +9,7 @@ import { refreshUser } from "redux/auth/operationAuth";
 import Loader from "./Loader";
 import { PrivateRoute } from "PrivateRoute";
 import { RestrictedRoute } from "RestrictedRoute";
+import { Route, Routes } from "react-router-dom";
 
 const HomePage = lazy(() => import("pages/HomePage/HomePage"))
 const ContactsPage = lazy(() => import("pages/ContactsPage/CotactsPage"))
@@ -34,10 +32,7 @@ export const App = () => {
         <Route
           path="/register"
           element={
-            <RestrictedRoute
-              redirectTo="/contacts"
-              component={<RegisterPage />}
-            />
+            <RestrictedRoute redirectTo="/contacts" component={<RegisterPage />}/>
           }
         />
         <Route

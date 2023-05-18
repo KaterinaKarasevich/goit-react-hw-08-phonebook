@@ -24,7 +24,7 @@ export const ContactList = () => {
         { filteredContacts && filteredContacts.map(contact => {
           return (
             <ContactItem key={contact.id}>
-              {contact.name + ": " + contact.phone}
+              {contact.name + ": " + contact.number}
               {<ContactButton
                 type="button"
                 onClick={() => dispatch(deleteContactAPI(contact.id))}>

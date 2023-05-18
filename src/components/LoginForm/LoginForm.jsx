@@ -18,7 +18,7 @@ import { logIn } from "redux/auth/operationAuth";
    };
     
   return (     
-        <Form onSubmit={handleSubmit} autoComplete="off">
+        <Form onSubmit={handleSubmit} autoComplete="on">
         
           <FormGroup>
             <FormWrap>

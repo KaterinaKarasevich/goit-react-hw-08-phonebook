@@ -2,9 +2,6 @@ import { useDispatch } from "react-redux";
 
 import { Form, FormGroup, FormWrap, FormLabel, FormInput, Button } from "components/RegistrationForm/RegistrationForm.styled"
 import { register } from "redux/auth/operationAuth";
-// import { getSignInInfo } from "redux/auth/operationAuth";
-// import { toast } from "react-hot-toast";
-
 
 export const RegistrationForm = () => {
   const dispatch = useDispatch();
@@ -21,33 +18,10 @@ export const RegistrationForm = () => {
     );
     form.reset();
   };
-// export const RegistrationForm = () => {
-//   const [name, setName] = useState("")
-//   const [email, setEmail] = useState("")
-//   const [password, setPassword] = useState("")
-//     const dispatch = useDispatch();
-  
-//     const handleSubmit = async(e) => {
-//      e.preventDefault();
-//       const form = e.target;
-    
-      
-//      const infoUser = {
-//            name: form.elements.name.value,
-//            email: form.elements.email.value,
-//            password: form.elements.password.value,
-//     }
-//       dispatch(getSignInInfo(infoUser));
-   
-//      form.reset();
-//    };
-//    const handleChange =  ({target:{name, value}}) => {
-//      if (name === "name") setName(value)
-//      else if (name === "email") setEmail(value)
-//      else if (name === "password") setPassword(value)
-//    }
-    
-  return (     
+
+  return (    
+
+
         <Form onSubmit={handleSubmit} autoComplete="on">
         
           <FormGroup>
@@ -57,11 +31,6 @@ export const RegistrationForm = () => {
                     type="text"
                     name="name"
                     placeholder="User name"
-                    // pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-                    // title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-                    // required
-                    // onChange={handleChange}
-                    // value={name}
               
                     />      
             </FormWrap>
@@ -71,8 +40,7 @@ export const RegistrationForm = () => {
                     type="email"
                     name="email"
                     placeholder="Email"
-                    // onChange={handleChange}
-                    // value={email}
+                  
                    />        
             </FormWrap>
             
@@ -82,8 +50,7 @@ export const RegistrationForm = () => {
                    type="password"
                    name="password"
                    placeholder="Password"
-                  //  onChange={handleChange}
-                  //  value={password}
+                
                  />
               
             </FormWrap>

@@ -9,8 +9,8 @@ export const Container = styled.div`
 
 export const UserName = styled.p`
   font-style: italic;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 20px;
   line-height: 1.5;
   color: white;
   margin-right: 10px;
@@ -25,13 +25,12 @@ export const LogOutBtn = styled.button`
   border: none;
   cursor: pointer;
   font-size: 15px;
-  background-color: black;
-  color: white;
+  background-color: #FFFF66;
+  color: #013220;
   border-radius: 4px;
 
   &:hover,
   &:focus {
-    transform: scale(1.1);
-    box-shadow: 10px 5px 5px grey;
+    background-color: #999900;
   }
 `;

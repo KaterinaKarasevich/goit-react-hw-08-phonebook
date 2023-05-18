@@ -2,30 +2,20 @@ import { NavLink } from "react-router-dom";
 import styled from '@emotion/styled'
 
 export const StyledLink = styled(NavLink)`
-  font-family: 'Quicksand', sans-serif;
+ font-style: italic;
   font-weight: 600;
   padding: 8px;
-  margin-right: 8px;
-
+  margin-right: 15px;
+ font-size: 18px;
   border: none;
   text-decoration: none;
-  background-color: transparent;
-  color: white;
-  font-size: 20px;
+   background-color: #FFFF66;
+  color: #013220;
+  border-radius: 4px;
 
   &:hover,
   &:focus {
-    transform: scale(1.1);
-    box-shadow: 10px 5px 5px grey;
+    background-color: #999900;
   }
 `;
-// const StyledLink = styled(NavLink)`
-//   color: blue;
-//   font-size: 20px;
-//   margin-left: 10px;
-//   text-decoration: none;
-//   &.active {
-//     color: red;
-//   }
-// `
 
